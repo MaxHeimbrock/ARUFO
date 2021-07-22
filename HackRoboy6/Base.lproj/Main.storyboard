@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kDL-Za-PMb">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoadingVC-->
+        <scene sceneID="den-cL-G67">
+            <objects>
+                <viewController storyboardIdentifier="LoadingVC" id="kDL-Za-PMb" customClass="LoadingVC" customModule="HackRoboy6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uhh-jm-PM1">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lädt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB2-KQ-Ml5">
+                                <rect key="frame" x="538.5" y="406.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eD-Gk-ZWU">
+                                <rect key="frame" x="539" y="329" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButtonTapped:" destination="kDL-Za-PMb" eventType="touchUpInside" id="QQu-oU-xFY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IB2-KQ-Ml5" firstAttribute="centerY" secondItem="uhh-jm-PM1" secondAttribute="centerY" id="wbB-f4-erV"/>
+                            <constraint firstItem="IB2-KQ-Ml5" firstAttribute="centerX" secondItem="uhh-jm-PM1" secondAttribute="centerX" id="y2l-VI-vuD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O4d-75-CWH"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dMc-1A-5kW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="-1384"/>
+        </scene>
+        <!--GameVC-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="GameVC" id="BV1-FR-VrT" customClass="GameVC" customModule="HackRoboy6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                            </arscnView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NpI-AO-ccO" userLabel="Instruction View">
+                                <rect key="frame" x="436" y="764" width="240" height="50"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="X5c-6z-uJe">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RWc-kE-z3V">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xjs-9T-BbR">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lpe-YI-vLl" customClass="MessageLabel" customModule="HackRoboy6" customModuleProvider="target">
+                                                        <rect key="frame" x="8" y="8" width="0.0" height="0.0"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Lpe-YI-vLl" firstAttribute="leading" secondItem="xjs-9T-BbR" secondAttribute="leading" constant="8" id="DCQ-ex-Ye1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Lpe-YI-vLl" secondAttribute="trailing" constant="8" id="HQM-Da-gA6"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Lpe-YI-vLl" secondAttribute="bottom" constant="8" id="lNE-lB-GeG"/>
+                                                    <constraint firstItem="Lpe-YI-vLl" firstAttribute="top" secondItem="xjs-9T-BbR" secondAttribute="top" constant="8" id="wR4-sg-O6R"/>
+                                                </constraints>
+                                            </view>
+                                            <blurEffect style="light"/>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="Vds-jw-4bv"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="NpI-AO-ccO" secondAttribute="bottom" constant="20" id="Obq-vm-gYU"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="NpI-AO-ccO" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="dDR-PI-YMJ"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="vYc-K9-kTf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18" y="-696"/>
+        </scene>
+        <!--Lost GameVC-->
+        <scene sceneID="7bg-d4-kS3">
+            <objects>
+                <viewController storyboardIdentifier="LostGameVC" id="pks-SF-Jsr" customClass="LostGameVC" customModule="HackRoboy6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3D8-II-CTr">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htG-L7-xgi">
+                                <rect key="frame" x="531" y="435" width="50" height="30"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="7Vd-oT-Fgr" eventType="touchUpInside" id="Us2-nm-qpo"/>
+                                    <action selector="restartButtonTapped:" destination="pks-SF-Jsr" eventType="touchUpInside" id="XDl-O9-DQM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Loose!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPQ-Z8-Ijb">
+                                <rect key="frame" x="514" y="406.5" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="htG-L7-xgi" firstAttribute="top" secondItem="UPQ-Z8-Ijb" secondAttribute="bottom" constant="7.5" id="VVe-3Z-IMz"/>
+                            <constraint firstItem="htG-L7-xgi" firstAttribute="top" secondItem="UPQ-Z8-Ijb" secondAttribute="bottom" constant="7.5" id="jZw-u7-Ubh"/>
+                            <constraint firstItem="UPQ-Z8-Ijb" firstAttribute="centerY" secondItem="3D8-II-CTr" secondAttribute="centerY" id="nLQ-RO-ZQC"/>
+                            <constraint firstItem="htG-L7-xgi" firstAttribute="centerX" secondItem="3D8-II-CTr" secondAttribute="centerX" id="ouB-xV-dLe"/>
+                            <constraint firstItem="UPQ-Z8-Ijb" firstAttribute="centerX" secondItem="3D8-II-CTr" secondAttribute="centerX" id="sjI-6H-8r9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gUk-AV-v35"/>
+                    </view>
+                    <connections>
+                        <outlet property="restartGame" destination="htG-L7-xgi" id="lYq-8L-FLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHo-2z-grz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764.56834532374103" y="-696.40287769784175"/>
+        </scene>
+        <!--Won GameVC-->
+        <scene sceneID="2g1-rh-GCz">
+            <objects>
+                <viewController storyboardIdentifier="WonGameVC" id="7Vd-oT-Fgr" customClass="WonGameVC" customModule="HackRoboy6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sar-2Z-9uZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-OV-Kc9">
+                                <rect key="frame" x="519.5" y="406.5" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jf-9Q-uG1">
+                                <rect key="frame" x="531" y="435" width="50" height="30"/>
+                                <state key="normal" title="Restart"/>
+                                <connections>
+                                    <action selector="restartButtonTapped:" destination="7Vd-oT-Fgr" eventType="touchUpInside" id="nbP-yP-FM3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0jf-9Q-uG1" firstAttribute="centerX" secondItem="sar-2Z-9uZ" secondAttribute="centerX" id="1Gd-Nl-H3T"/>
+                            <constraint firstItem="OxN-OV-Kc9" firstAttribute="centerY" secondItem="sar-2Z-9uZ" secondAttribute="centerY" id="BA7-76-DhT"/>
+                            <constraint firstItem="OxN-OV-Kc9" firstAttribute="centerX" secondItem="sar-2Z-9uZ" secondAttribute="centerX" id="EDH-9L-mUk"/>
+                            <constraint firstItem="0jf-9Q-uG1" firstAttribute="top" secondItem="OxN-OV-Kc9" secondAttribute="bottom" constant="7.5" id="jyH-4S-Ifu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jl1-cT-wv4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otW-vy-D2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442.2661870503598" y="-696.40287769784175"/>
+        </scene>
+    </scenes>
+</document>

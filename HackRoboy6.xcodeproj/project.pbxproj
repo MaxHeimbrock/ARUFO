@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E2F38C99DFC85670E958FDC /* Pods_HackRoboy6.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F2CAE82D0246EB04D8BF03D /* Pods_HackRoboy6.framework */; };
+		BB2489F8227D8632009ECD8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2489F7227D8632009ECD8E /* AppDelegate.swift */; };
+		BB2489FA227D8632009ECD8E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BB2489F9227D8632009ECD8E /* art.scnassets */; };
+		BB2489FF227D8632009ECD8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2489FD227D8632009ECD8E /* Main.storyboard */; };
+		BB248A01227D8633009ECD8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB248A00227D8633009ECD8E /* Assets.xcassets */; };
+		BB248A04227D8633009ECD8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB248A02227D8633009ECD8E /* LaunchScreen.storyboard */; };
+		BB248A1D227DC4B6009ECD8E /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB248A1C227DC4B6009ECD8E /* OpenCVWrapper.mm */; };
+		BB248A66227E272B009ECD8E /* SCNVector3+MathUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB248A65227E272B009ECD8E /* SCNVector3+MathUtils.swift */; };
+		BB248A6B227EC2A0009ECD8E /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB248A6A227EC2A0009ECD8E /* LoadingVC.swift */; };
+		BB248A7D227EC980009ECD8E /* cheer-crowd.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A6F227EC980009ECD8E /* cheer-crowd.mp3 */; };
+		BB248A7E227EC980009ECD8E /* awww-01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A70227EC980009ECD8E /* awww-01.mp3 */; };
+		BB248A7F227EC980009ECD8E /* oh-no.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A71227EC980009ECD8E /* oh-no.mp3 */; };
+		BB248A80227EC980009ECD8E /* large_crowd_ambient.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A72227EC980009ECD8E /* large_crowd_ambient.mp3 */; };
+		BB248A81227EC980009ECD8E /* applause-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A73227EC980009ECD8E /* applause-3.mp3 */; };
+		BB248A82227EC980009ECD8E /* oh-jeah-01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A74227EC980009ECD8E /* oh-jeah-01.mp3 */; };
+		BB248A83227EC980009ECD8E /* mhm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A75227EC980009ECD8E /* mhm.mp3 */; };
+		BB248A84227EC980009ECD8E /* game-background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A76227EC980009ECD8E /* game-background-music.mp3 */; };
+		BB248A85227EC980009ECD8E /* ohh-walla.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A77227EC980009ECD8E /* ohh-walla.mp3 */; };
+		BB248A86227EC980009ECD8E /* god-damn-it.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A78227EC980009ECD8E /* god-damn-it.mp3 */; };
+		BB248A87227EC980009ECD8E /* game-over.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A79227EC980009ECD8E /* game-over.mp3 */; };
+		BB248A88227EC980009ECD8E /* boo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A7A227EC980009ECD8E /* boo.mp3 */; };
+		BB248A89227EC980009ECD8E /* aww.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB248A7B227EC980009ECD8E /* aww.mp3 */; };
+		BB248A8B227ECA2A009ECD8E /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB248A8A227ECA2A009ECD8E /* SoundController.swift */; };
+		BB248A8D227ED623009ECD8E /* LostGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB248A8C227ED623009ECD8E /* LostGameVC.swift */; };
+		BB248A8F227ED704009ECD8E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB248A8E227ED704009ECD8E /* UIImage.swift */; };
+		BB248A93227ED8D7009ECD8E /* WonGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB248A92227ED8D7009ECD8E /* WonGameVC.swift */; };
+		BB248A96227EDEAE009ECD8E /* UFO.dae in Resources */ = {isa = PBXBuildFile; fileRef = BB248A95227EDEAE009ECD8E /* UFO.dae */; };
+		BB9B01B8227DB0430029928D /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B01B7227DB0430029928D /* GameVC.swift */; };
+		BB9B01BA227DB1C80029928D /* GameVC+ARSCNViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B01B9227DB1C80029928D /* GameVC+ARSCNViewDelegate.swift */; };
+		BB9B01BC227DB4540029928D /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9B01BB227DB4540029928D /* GameController.swift */; };
+		BB9B01BE227EE3CF0029928D /* ship.scn in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01BD227EE3CF0029928D /* ship.scn */; };
+		BB9B01C0227EECE40029928D /* RoboyUfo.dae in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01BF227EECE40029928D /* RoboyUfo.dae */; };
+		BB9B01C2227EECE90029928D /* EnemyUfo.dae in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01C1227EECE90029928D /* EnemyUfo.dae */; };
+		BB9B01C4227EEF2F0029928D /* IceCone.dae in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01C3227EEF2F0029928D /* IceCone.dae */; };
+		BB9B01C6227EF11A0029928D /* 10861 Ice Cream_v1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01C5227EF11A0029928D /* 10861 Ice Cream_v1.jpg */; };
+		BB9B01C8227F04E10029928D /* yummy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01C7227F04E00029928D /* yummy.mp3 */; };
+		BB9B01CA227F04F60029928D /* oh-yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01C9227F04F60029928D /* oh-yeah.mp3 */; };
+		BB9B01CC227F05250029928D /* EnemyUfo2.dae in Resources */ = {isa = PBXBuildFile; fileRef = BB9B01CB227F05250029928D /* EnemyUfo2.dae */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2015B0F9C7D911197E573C87 /* Pods-HackRoboy6.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRoboy6.release.xcconfig"; path = "Target Support Files/Pods-HackRoboy6/Pods-HackRoboy6.release.xcconfig"; sourceTree = "<group>"; };
+		4F2CAE82D0246EB04D8BF03D /* Pods_HackRoboy6.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackRoboy6.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2489F4227D8632009ECD8E /* HackRoboy6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackRoboy6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2489F7227D8632009ECD8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB2489F9227D8632009ECD8E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BB2489FE227D8632009ECD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB248A00227D8633009ECD8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB248A03227D8633009ECD8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB248A05227D8633009ECD8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB248A1A227DC4B5009ECD8E /* HackRoboy6-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HackRoboy6-Bridging-Header.h"; sourceTree = "<group>"; };
+		BB248A1B227DC4B6009ECD8E /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		BB248A1C227DC4B6009ECD8E /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		BB248A65227E272B009ECD8E /* SCNVector3+MathUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+MathUtils.swift"; sourceTree = "<group>"; };
+		BB248A6A227EC2A0009ECD8E /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		BB248A6F227EC980009ECD8E /* cheer-crowd.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cheer-crowd.mp3"; sourceTree = "<group>"; };
+		BB248A70227EC980009ECD8E /* awww-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "awww-01.mp3"; sourceTree = "<group>"; };
+		BB248A71227EC980009ECD8E /* oh-no.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "oh-no.mp3"; sourceTree = "<group>"; };
+		BB248A72227EC980009ECD8E /* large_crowd_ambient.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = large_crowd_ambient.mp3; sourceTree = "<group>"; };
+		BB248A73227EC980009ECD8E /* applause-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "applause-3.mp3"; sourceTree = "<group>"; };
+		BB248A74227EC980009ECD8E /* oh-jeah-01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "oh-jeah-01.mp3"; sourceTree = "<group>"; };
+		BB248A75227EC980009ECD8E /* mhm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mhm.mp3; sourceTree = "<group>"; };
+		BB248A76227EC980009ECD8E /* game-background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game-background-music.mp3"; sourceTree = "<group>"; };
+		BB248A77227EC980009ECD8E /* ohh-walla.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ohh-walla.mp3"; sourceTree = "<group>"; };
+		BB248A78227EC980009ECD8E /* god-damn-it.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "god-damn-it.mp3"; sourceTree = "<group>"; };
+		BB248A79227EC980009ECD8E /* game-over.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "game-over.mp3"; sourceTree = "<group>"; };
+		BB248A7A227EC980009ECD8E /* boo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boo.mp3; sourceTree = "<group>"; };
+		BB248A7B227EC980009ECD8E /* aww.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = aww.mp3; sourceTree = "<group>"; };
+		BB248A8A227ECA2A009ECD8E /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		BB248A8C227ED623009ECD8E /* LostGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostGameVC.swift; sourceTree = "<group>"; };
+		BB248A8E227ED704009ECD8E /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		BB248A92227ED8D7009ECD8E /* WonGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonGameVC.swift; sourceTree = "<group>"; };
+		BB248A95227EDEAE009ECD8E /* UFO.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = UFO.dae; sourceTree = "<group>"; };
+		BB9B01B7227DB0430029928D /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		BB9B01B9227DB1C80029928D /* GameVC+ARSCNViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameVC+ARSCNViewDelegate.swift"; sourceTree = "<group>"; };
+		BB9B01BB227DB4540029928D /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		BB9B01BD227EE3CF0029928D /* ship.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ship.scn; sourceTree = "<group>"; };
+		BB9B01BF227EECE40029928D /* RoboyUfo.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = RoboyUfo.dae; sourceTree = "<group>"; };
+		BB9B01C1227EECE90029928D /* EnemyUfo.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = EnemyUfo.dae; sourceTree = "<group>"; };
+		BB9B01C3227EEF2F0029928D /* IceCone.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = IceCone.dae; sourceTree = "<group>"; };
+		BB9B01C5227EF11A0029928D /* 10861 Ice Cream_v1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10861 Ice Cream_v1.jpg"; sourceTree = "<group>"; };
+		BB9B01C7227F04E00029928D /* yummy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yummy.mp3; sourceTree = "<group>"; };
+		BB9B01C9227F04F60029928D /* oh-yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "oh-yeah.mp3"; sourceTree = "<group>"; };
+		BB9B01CB227F05250029928D /* EnemyUfo2.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = EnemyUfo2.dae; sourceTree = "<group>"; };
+		E893A90784BF812AFFD29C35 /* Pods-HackRoboy6.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackRoboy6.debug.xcconfig"; path = "Target Support Files/Pods-HackRoboy6/Pods-HackRoboy6.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB2489F1227D8632009ECD8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2F38C99DFC85670E958FDC /* Pods_HackRoboy6.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40CCF6E47F663E0E185DC833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F2CAE82D0246EB04D8BF03D /* Pods_HackRoboy6.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD240FDFA1118FA7CB7FAF3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E893A90784BF812AFFD29C35 /* Pods-HackRoboy6.debug.xcconfig */,
+				2015B0F9C7D911197E573C87 /* Pods-HackRoboy6.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB2489EB227D8632009ECD8E = {
+			isa = PBXGroup;
+			children = (
+				BB2489F6227D8632009ECD8E /* HackRoboy6 */,
+				BB2489F5227D8632009ECD8E /* Products */,
+				AD240FDFA1118FA7CB7FAF3F /* Pods */,
+				40CCF6E47F663E0E185DC833 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB2489F5227D8632009ECD8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB2489F4227D8632009ECD8E /* HackRoboy6.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB2489F6227D8632009ECD8E /* HackRoboy6 */ = {
+			isa = PBXGroup;
+			children = (
+				BB248A6C227EC96F009ECD8E /* Assets */,
+				BB248A67227E3DAE009ECD8E /* Extension */,
+				BB248A19227DC4A8009ECD8E /* Wrapper */,
+				BB248A00227D8633009ECD8E /* Assets.xcassets */,
+				BB2489F9227D8632009ECD8E /* art.scnassets */,
+				BB2489FD227D8632009ECD8E /* Main.storyboard */,
+				BB248A02227D8633009ECD8E /* LaunchScreen.storyboard */,
+				BB248A05227D8633009ECD8E /* Info.plist */,
+				BB9B01B7227DB0430029928D /* GameVC.swift */,
+				BB9B01B9227DB1C80029928D /* GameVC+ARSCNViewDelegate.swift */,
+				BB9B01BB227DB4540029928D /* GameController.swift */,
+				BB248A8A227ECA2A009ECD8E /* SoundController.swift */,
+				BB2489F7227D8632009ECD8E /* AppDelegate.swift */,
+				BB248A6A227EC2A0009ECD8E /* LoadingVC.swift */,
+				BB248A8C227ED623009ECD8E /* LostGameVC.swift */,
+				BB248A92227ED8D7009ECD8E /* WonGameVC.swift */,
+			);
+			path = HackRoboy6;
+			sourceTree = "<group>";
+		};
+		BB248A19227DC4A8009ECD8E /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				BB248A1B227DC4B6009ECD8E /* OpenCVWrapper.h */,
+				BB248A1C227DC4B6009ECD8E /* OpenCVWrapper.mm */,
+				BB248A1A227DC4B5009ECD8E /* HackRoboy6-Bridging-Header.h */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		BB248A67227E3DAE009ECD8E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BB248A65227E272B009ECD8E /* SCNVector3+MathUtils.swift */,
+				BB248A8E227ED704009ECD8E /* UIImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		BB248A6C227EC96F009ECD8E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BB248A94227EDEA5009ECD8E /* Model */,
+				BB248A6D227EC973009ECD8E /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BB248A6D227EC973009ECD8E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				BB9B01C7227F04E00029928D /* yummy.mp3 */,
+				BB248A73227EC980009ECD8E /* applause-3.mp3 */,
+				BB9B01C9227F04F60029928D /* oh-yeah.mp3 */,
+				BB248A7B227EC980009ECD8E /* aww.mp3 */,
+				BB248A70227EC980009ECD8E /* awww-01.mp3 */,
+				BB248A7A227EC980009ECD8E /* boo.mp3 */,
+				BB248A6F227EC980009ECD8E /* cheer-crowd.mp3 */,
+				BB248A76227EC980009ECD8E /* game-background-music.mp3 */,
+				BB248A79227EC980009ECD8E /* game-over.mp3 */,
+				BB248A78227EC980009ECD8E /* god-damn-it.mp3 */,
+				BB248A72227EC980009ECD8E /* large_crowd_ambient.mp3 */,
+				BB248A75227EC980009ECD8E /* mhm.mp3 */,
+				BB248A74227EC980009ECD8E /* oh-jeah-01.mp3 */,
+				BB248A71227EC980009ECD8E /* oh-no.mp3 */,
+				BB248A77227EC980009ECD8E /* ohh-walla.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		BB248A94227EDEA5009ECD8E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB9B01BF227EECE40029928D /* RoboyUfo.dae */,
+				BB9B01C1227EECE90029928D /* EnemyUfo.dae */,
+				BB9B01CB227F05250029928D /* EnemyUfo2.dae */,
+				BB9B01C3227EEF2F0029928D /* IceCone.dae */,
+				BB9B01C5227EF11A0029928D /* 10861 Ice Cream_v1.jpg */,
+				BB9B01BD227EE3CF0029928D /* ship.scn */,
+				BB248A95227EDEAE009ECD8E /* UFO.dae */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB2489F3227D8632009ECD8E /* HackRoboy6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB248A08227D8633009ECD8E /* Build configuration list for PBXNativeTarget "HackRoboy6" */;
+			buildPhases = (
+				BA1F5D75ABF5DA9ACCBCB7EE /* [CP] Check Pods Manifest.lock */,
+				BB2489F0227D8632009ECD8E /* Sources */,
+				BB2489F1227D8632009ECD8E /* Frameworks */,
+				BB2489F2227D8632009ECD8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackRoboy6;
+			productName = HackRoboy6;
+			productReference = BB2489F4227D8632009ECD8E /* HackRoboy6.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB2489EC227D8632009ECD8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Leenert Specht";
+				TargetAttributes = {
+					BB2489F3227D8632009ECD8E = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = BB2489EF227D8632009ECD8E /* Build configuration list for PBXProject "HackRoboy6" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB2489EB227D8632009ECD8E;
+			productRefGroup = BB2489F5227D8632009ECD8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB2489F3227D8632009ECD8E /* HackRoboy6 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB2489F2227D8632009ECD8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9B01C2227EECE90029928D /* EnemyUfo.dae in Resources */,
+				BB248A89227EC980009ECD8E /* aww.mp3 in Resources */,
+				BB248A80227EC980009ECD8E /* large_crowd_ambient.mp3 in Resources */,
+				BB9B01C8227F04E10029928D /* yummy.mp3 in Resources */,
+				BB9B01CA227F04F60029928D /* oh-yeah.mp3 in Resources */,
+				BB248A7F227EC980009ECD8E /* oh-no.mp3 in Resources */,
+				BB2489FA227D8632009ECD8E /* art.scnassets in Resources */,
+				BB248A83227EC980009ECD8E /* mhm.mp3 in Resources */,
+				BB248A86227EC980009ECD8E /* god-damn-it.mp3 in Resources */,
+				BB248A84227EC980009ECD8E /* game-background-music.mp3 in Resources */,
+				BB9B01BE227EE3CF0029928D /* ship.scn in Resources */,
+				BB248A88227EC980009ECD8E /* boo.mp3 in Resources */,
+				BB248A81227EC980009ECD8E /* applause-3.mp3 in Resources */,
+				BB248A04227D8633009ECD8E /* LaunchScreen.storyboard in Resources */,
+				BB248A7E227EC980009ECD8E /* awww-01.mp3 in Resources */,
+				BB9B01CC227F05250029928D /* EnemyUfo2.dae in Resources */,
+				BB9B01C6227EF11A0029928D /* 10861 Ice Cream_v1.jpg in Resources */,
+				BB248A01227D8633009ECD8E /* Assets.xcassets in Resources */,
+				BB248A96227EDEAE009ECD8E /* UFO.dae in Resources */,
+				BB9B01C4227EEF2F0029928D /* IceCone.dae in Resources */,
+				BB248A7D227EC980009ECD8E /* cheer-crowd.mp3 in Resources */,
+				BB248A82227EC980009ECD8E /* oh-jeah-01.mp3 in Resources */,
+				BB248A85227EC980009ECD8E /* ohh-walla.mp3 in Resources */,
+				BB9B01C0227EECE40029928D /* RoboyUfo.dae in Resources */,
+				BB248A87227EC980009ECD8E /* game-over.mp3 in Resources */,
+				BB2489FF227D8632009ECD8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA1F5D75ABF5DA9ACCBCB7EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackRoboy6-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB2489F0227D8632009ECD8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9B01BC227DB4540029928D /* GameController.swift in Sources */,
+				BB248A8F227ED704009ECD8E /* UIImage.swift in Sources */,
+				BB248A6B227EC2A0009ECD8E /* LoadingVC.swift in Sources */,
+				BB248A66227E272B009ECD8E /* SCNVector3+MathUtils.swift in Sources */,
+				BB248A1D227DC4B6009ECD8E /* OpenCVWrapper.mm in Sources */,
+				BB248A8D227ED623009ECD8E /* LostGameVC.swift in Sources */,
+				BB9B01BA227DB1C80029928D /* GameVC+ARSCNViewDelegate.swift in Sources */,
+				BB9B01B8227DB0430029928D /* GameVC.swift in Sources */,
+				BB2489F8227D8632009ECD8E /* AppDelegate.swift in Sources */,
+				BB248A93227ED8D7009ECD8E /* WonGameVC.swift in Sources */,
+				BB248A8B227ECA2A009ECD8E /* SoundController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB2489FD227D8632009ECD8E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB2489FE227D8632009ECD8E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB248A02227D8633009ECD8E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB248A03227D8633009ECD8E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB248A06227D8633009ECD8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB248A07227D8633009ECD8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB248A09227D8633009ECD8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E893A90784BF812AFFD29C35 /* Pods-HackRoboy6.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC5JFY69ZZ;
+				INFOPLIST_FILE = HackRoboy6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.codeheart.HackRoboy6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackRoboy6/Wrapper/HackRoboy6-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB248A0A227D8633009ECD8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2015B0F9C7D911197E573C87 /* Pods-HackRoboy6.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC5JFY69ZZ;
+				INFOPLIST_FILE = HackRoboy6/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.codeheart.HackRoboy6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HackRoboy6/Wrapper/HackRoboy6-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB2489EF227D8632009ECD8E /* Build configuration list for PBXProject "HackRoboy6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB248A06227D8633009ECD8E /* Debug */,
+				BB248A07227D8633009ECD8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB248A08227D8633009ECD8E /* Build configuration list for PBXNativeTarget "HackRoboy6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB248A09227D8633009ECD8E /* Debug */,
+				BB248A0A227D8633009ECD8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB2489EC227D8632009ECD8E /* Project object */;
+}
